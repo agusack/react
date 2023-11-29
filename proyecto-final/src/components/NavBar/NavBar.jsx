@@ -3,13 +3,17 @@ import './NavBar.css';
 
 function NavBar(props) {
     return (
-        <div>
-            <h1></h1>
-            <ul className='nav'>
-                <a href="#" >Superheroes</a>
-                <a href="#" >Drama</a>
-                <a href="#" >Accion</a>
-            </ul>
+        <div className='nav'>
+            <img src="../../../public/logo192.png" alt="" />
+            <div className='center'>
+                <button className='button'>Inicio</button>
+                <ul>
+                    <a href="#" >Vehiculos</a>
+                    <a href="#" >Electrónica</a>
+                    <a href="#" >Libros</a>
+                </ul>
+            </div>
+            <button className='button'>Loggin</button>
         </div>
     );
 }
