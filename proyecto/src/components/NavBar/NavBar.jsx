@@ -1,8 +1,8 @@
 import React from 'react';
 import './NavBar.css';
 import logo from './logo192.png';
-import { MdShoppingCart } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
+import CartWidget from '../CartWidget/CartWidget'
 
 function NavBar(props) {
     return (
@@ -18,9 +18,7 @@ function NavBar(props) {
                 </ul>
             </div>
             <div className='user'>
-                <button className='button'>
-                    <MdShoppingCart className='icon' />
-                </button>
+                <CartWidget />
                 <button className='button'>
                     <FaUser className='icon' />
                 </button>
